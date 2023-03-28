@@ -23,7 +23,8 @@ pipeline {
                 junit skipMarkingBuildUnstable: true, testResults: 'xmlReport/output.xml'
             }
         }
-	stage("Publish Allure Report")	{
+	
+    stage("Publish Allure Report")	{
 		steps{
 			echo "Publish Allure"
 			allure includeProperties: false, jdk: '', results: [[path: 'allure_results']]
