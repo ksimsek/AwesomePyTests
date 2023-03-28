@@ -1,0 +1,2 @@
+ReqURL:http://127.0.0.1:5000/api/login
+ReqBody: {"email": "admin@admin", "password": "1234"}
